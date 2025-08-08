@@ -30,8 +30,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Docs",
+          "href": "https://docs.shockvueapp.com/",
           "icon": "book-open-cover"
         },
         {
