@@ -44,7 +44,7 @@
   },
   "logo": {
     "light": "/images/openzero-logo.png",
-    "dark": "/logo/dark.svg"
+    "dark": "/images/openzero-logo-white.png"
   },
   "navbar": {
     "links": [
