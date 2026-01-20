@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "Shockvue Docs",
   "colors": {
-    "primary": "#F97216",
+    "primary": "#040405",
     "light": "#07C983",
-    "dark": "#F97216"
+    "dark": "#ffffff"
   },
   "favicon": "/favicon.svg",
   "navigation": {
