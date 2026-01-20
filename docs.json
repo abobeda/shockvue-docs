@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#ffffff"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon.ico",
   "navigation": {
     "global": {
       "anchors": [
@@ -49,8 +49,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@shockvueapp.com"
+        "label": "Suporte",
+        "href": "mailto:suporte@openzero.com.br"
       }
     ],
     "primary": {
