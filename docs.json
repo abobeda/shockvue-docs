@@ -43,7 +43,7 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/images/openzero-logo.png",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
