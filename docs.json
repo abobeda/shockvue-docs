@@ -9,12 +9,26 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Docs",
+          "icon": "book-open-cover",
+          "href": "https://docs.shockvueapp.com/"
+        },
+        {
+          "anchor": "Shockvue",
+          "icon": "house",
+          "href": "https://shockvueapp.com"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Docs",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Primeiros passos",
             "pages": [
               "index",
               "smart-edit",
@@ -26,21 +40,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Docs",
-          "href": "https://docs.shockvueapp.com/",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Shockvue",
-          "href": "https://shockvueapp.com",
-          "icon": "house"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/images/openzero-logo.png",
