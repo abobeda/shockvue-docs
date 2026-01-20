@@ -75,5 +75,9 @@
     "socials": {
       "instagram": "https://www.instagram.com/openzero.ai/"
     }
+  },
+  "thumbnails": {
+    "background": "/images/paint-more-day.jpg",
+    "appearance": "light"
   }
 }
