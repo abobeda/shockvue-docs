@@ -81,5 +81,8 @@
     "background": "/images/paint-more-day.jpg",
     "appearance": "light"
   },
-  "description": "Documentação do OpenZero"
+  "description": "Documentação do OpenZero",
+  "appearance": {
+    "default": "light"
+  }
 }
