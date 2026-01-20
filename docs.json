@@ -80,5 +80,6 @@
   "thumbnails": {
     "background": "/images/paint-more-day.jpg",
     "appearance": "light"
-  }
+  },
+  "description": "Documentação do OpenZero"
 }
