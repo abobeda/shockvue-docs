@@ -14,19 +14,16 @@
         {
           "anchor": "Docs",
           "icon": "book-open-cover",
-          "href": "https://docs.shockvueapp.com/"
+          "href": "https://docs.openzero.com.br/"
         },
         {
           "anchor": "Shockvue",
           "icon": "house",
-          "href": "https://shockvueapp.com"
+          "href": "https://www.openzero.com.br/"
         }
       ]
     },
     "tabs": [
-      {
-        "tab": "Untitled Tab"
-      },
       {
         "tab": "Docs",
         "groups": [
