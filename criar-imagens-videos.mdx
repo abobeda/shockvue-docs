@@ -107,7 +107,7 @@ Já para modelos de imagem, a quantidade de imagens de referência aceitas para 
 
 **Nano Banana:** 9 imagens (1 imagem base + 8 refs)
 
-**Refs de Imagem (Imagem):** Forneça uma ou mais imagens para guiar o estilo e a aparência geral da primeira imagem (base) ou para editar uma nova imagem.
+**Refs de Imagem (Imagem):** Forneça uma ou mais imagens de estilo/estrutura para guiar o estilo e a aparência final da primeira imagem (base) ou para editar uma nova imagem. 
 
 <Tip>
   Arraste e solte itens diretamente das abas _Explorar_ ou \_Histórico \_(Criar imagem) nos slots de referência para um fluxo de trabalho mais rápido. Em Criar vídeo, arrasta imagens nos slots de imagens.
@@ -123,18 +123,266 @@ Antes de gerar, um indicador de custo por créditos mostra o valor total corresp
 
 ![Historico](/images/historico.jpg)
 
-A aba **_Histórico _**fornece um registro cronológico de tudo o que você gerou e funciona como um espaço de trabalho para aprimorar trabalhos anteriores. Fornece detalhes como modelo e proporção da imagem, entre outros.
+A aba **\_Histórico \_**fornece um registro cronológico de tudo o que você gerou e funciona como um espaço de trabalho para aprimorar trabalhos anteriores. Fornece detalhes como modelo e proporção da imagem, entre outros.
 
 ![Explorar](/images/explorar.jpg)
 
-A aba **_Explorar _**mostra tudo o que foi criado e permite clicar para expandir a visualização e os detalhes da imagem gerada. Também oferece algumas opções de continuidade no fluxo criativo:
+A aba **\_Explorar \_**mostra tudo o que foi criado e permite clicar para expandir a visualização e os detalhes da imagem gerada. Também oferece algumas opções de continuidade no fluxo criativo:
 
 **Usar como referência:** envia a imagem para os slots de imagens de referência para criação de novas imagens a partir da que foi gerada.
 
-**Aumentar resolução da imagem:** envia a imagem para a seção Aprimorar, onde ela pode ter a resolução aumentada (upscaling).
+**Aumentar resolução da imagem:** envia a imagem para a seção Aprimorar, onde o arquivo pode ter a resolução aumentada (upscaling).
 
 **Criar vídeo:** envia a imagem para a seção Criar vídeo para ser usada como frame inicial na criação de vídeo.
 
 ### Vídeos
 
 ![Gerar Video](/images/gerar-video.jpg)
+
+Os vídeos gerados são mostrados automaticamente na própria seção. 
+
+**Aumentar resolução do vídeo:** envia o vídeo para a seção Aprimorar, onde o arquivo pode ter a resolução aumentada (upscaling) com o **Topaz Upscale**.
+
+**Estender vídeo:** gera uma continuação da história a partir do último frame do vídeo, que é enviado automaticamente para o slot de "Frame inicial".
+
+## **Formatos de download suportados**
+
+📹 **Vídeo:**
+
+- MP4: Codecs H.264, H.265. Qualidade até 4K (com upscaling)
+
+🖼️ **Imagem:**
+
+- PNG ou JPG (varia com o modelo): Saída em alta resolução de até 4K, sem perdas
+
+## Modelos
+
+**OpenZero** oferece acesso a modelos especializados otimizados para diferentes casos de uso. Cada modelo apresenta capacidades únicas, desde iteração rápida até qualidade pronta para produção.
+
+Modelos de pós-processamento exigem um resultado já gerado, embora você também possa enviar seu próprio arquivo de imagem ou vídeo./
+
+### Imagem
+
+<Accordion title="Nano Banana Pro">
+  **Modelo do Google com alta resolução de até 4K para geração e edição de alta qualidade de imagens a partir de prompts de texto.**
+
+  **Recursos:**
+
+  - Suporta até 11 referências de imagem para orientar a geração
+  - Gera até 4 imagens por vez
+
+  **Opções de saída:**
+
+  - Proporções: 21:9, 16:9, 5:4, 4:3, 3:2, 1:1, 2:3, 3:4, 4:5, 9:16
+
+  **Ideal para:**
+
+  - Criação e iteração de imagens com alta qualidade e prontas para uso
+</Accordion>
+
+<Accordion title="GPT Image 1.5">
+  Um modelo versátil da OpenAI para criação e edição de imagens com alto nível de precisão, usando linguagem natural como principal forma de controle.
+
+  Foi desenhado para quem precisa **direcionar o visual com clareza**.
+
+  **Recursos principais**
+
+  - Aceita até 9 imagens de referência para guiar estilo, composição e detalhes
+  - Gera até **4 variações por execução**, facilitando comparação e escolha
+  - Mantém boa fidelidade ao prompt mesmo em edições e ajustes finos
+
+  **Opções de saída**
+
+  - Proporções: **3:2, 1:1, 2:3**
+  - Qualidade: **low, medium, high**, equilibrando custo e definição conforme o uso
+
+  **Indicado para**
+
+  - Criação de imagens orientadas por texto com controle real
+  - Edição visual (ajustes, variações, iterações) sem precisar refazer tudo do zero
+  - Workflows de design, marketing, produto e prototipagem visual
+</Accordion>
+
+<Accordion title="Seedream 4.5">
+  **Um modelo de imagem especializado para gerar sequências de múltiplos quadros ou cenas com grande movimento e ação.**
+
+  **Recursos:**
+
+  - Excelente na criação de imagens com física estável e transições coerentes
+  - Aceita até 11 referências de imagem para orientar a geração
+  - Gera até 4 imagens por vez
+
+  **Opções de saída:**
+
+  - Proporções: automático, 16:9, 4:3, 1:1, 3:4, 9:16
+
+  **Ideal para:**
+
+  - Cenas de ação e composições dinâmicas
+</Accordion>
+
+<Accordion title="Nano Banana">
+  **Primeira versão do modelo do Google com alta velocidade para geração e edição rápida e de qualidade de imagens a partir de prompts de texto.**
+
+  **Recursos:**
+
+  - Suporta múltiplas referências de imagem para orientar a geração
+  - Gera até 4 imagens por vez
+
+  **Opções de saída:**
+
+  - Proporções: 21:9, 16:9, 5:4, 4:3, 3:2, 1:1, 2:3, 3:4, 4:5, 9:16
+
+  **Ideal para:**
+
+  - Criação e iteração rápida de imagens
+</Accordion>
+
+<Accordion title="Flux 2 Pro">
+  **Um modelo profissional para geração e edição avançada de imagens, oferecendo forte coerência de cena e controle de estilo.**
+
+  **Recursos:**
+
+  - Controle de estilo baseado em imagem, exigindo uma imagem de referência para orientar a estética visual
+  - Aceita até 9 imagens de referência
+  - Gera até 4 imagens por vez
+
+  **Opções de saída:**
+
+  - Proporções: 21:9, 16:9, 4:3, 3:2, 1:1, 2:3, 3:4, 4:5, 9:16, 9:21
+
+  **Ideal para:**
+
+  - Conteúdo profissional com requisitos precisos de estilo
+</Accordion>
+
+<Accordion title="Imagen 4">
+  Modelo de geração de imagens do Google focado em **qualidade visual, realismo e coerência estética** a partir de descrições em linguagem natural.
+
+  **Recursos principais**
+
+  - Geração de imagens com alto nível de realismo e iluminação natural
+  - Forte consistência de estilo dentro de uma mesma execução
+  - Boa interpretação de cenas, ambientes e composição
+
+  **Opções de saída**
+
+  - Proporções variadas (dependendo da integração) de até 2K
+  - Qualidade otimizada automaticamente para fidelidade visual
+
+  **Indicado para**
+
+  - Criar imagens finais para campanhas, social, concept art e mockups
+  - Cenas, personagens e ambientes com estética bem resolvida
+  - Quando você quer algo que “já parece pronto” sem muito retrabalho
+</Accordion>
+
+<Accordion title="GPT Image 1 Mini">
+  Um modelo leve, mas poderoso, da OpenAI para geração de imagens rápidas a partir de texto, focado em **velocidade, custo baixo e iteração ágil**.
+
+  É feito para **testar ideias visualmente ou projetos que não requerem alta resolução**.
+
+  **Recursos principais**
+
+  - Geração rápida com baixo custo computacional
+  - Ideal para criar rascunhos visuais, variações e conceitos iniciais
+  - Boa interpretação de prompts simples e estilos amplos
+
+  **Opções de saída**
+
+  - Proporções básicas (dependendo da integração)
+  - Qualidade otimizada para preview e exploração, não para entrega final
+
+  **Indicado para**
+
+  - Brainstorming visual
+  - Moodboards, wireframes visuais, thumbnails
+  - Prototipagem de ideias antes de passar para modelos mais pesados
+</Accordion>
+
+### Vídeo
+
+<Accordion title="Sora 2 Pro">
+  **O modelo de vídeo da OpenAI mais avançado e de alta fidelidade para resultados cinematográficos à sua disposição.**
+
+  **Entradas de geração:**
+
+  - Texto para Vídeo
+  - Quadro inicial
+
+  **Recursos:**
+
+  - Saída de altíssima fidelidade, nível profissional, com áudio sincronizado
+  - Controle preciso de múltiplos quadros
+  - Excelente em movimentos complexos e aderência ao prompt
+  - Durações fixas: 4s, 8s e 12s
+  - Criação em lote com até 4 gerações por vez
+
+  **Opções de saída:**
+
+  - Resoluções: 720p, 1080p
+  - Proporções: 16:9, 9:16
+
+  **Ideal para:**
+
+  - Conteúdo de vídeo cinematográfico em nível profissional
+
+  <Warning>
+    O frame final não é atualmente suportado. Não é possível fornecer referências de imagem com pessoas reais. O som está habilitado por padrão.
+  </Warning>
+</Accordion>
+
+<Accordion title="Sora 2">
+  **A versão padrão e de alta velocidade do modelo avançado de vídeo da OpenAI, ajustada para criação de conteúdo do dia a dia.**
+
+  **Entradas de geração:**
+
+  - Texto para Vídeo
+  - Quadro inicial
+
+  **Recursos:**
+
+  - Vídeos realistas, com consciência física e áudio sincronizado
+  - Controle refinado de cena
+  - Durações fixas: 4s, 8s e 12s
+  - Criação em lote com até 4 gerações por vez
+  - Forte consistência narrativa e de personagens
+
+  **Opções de saída:**
+
+  - Resoluções: 720p, 1080p
+  - Proporções: 16:9, 9:16
+
+  **Ideal para:**
+
+  - Criação de conteúdo cotidiano com física realista
+
+  <Warning>
+    O frame final não é atualmente suportado. Não é possível fornecer referências de imagem com pessoas reais. O som está habilitado por padrão.
+  </Warning>
+</Accordion>
+
+<Accordion title="Kling 2.6 Pro">
+  Modelo avançado de geração de vídeo por IA focado em **controle de movimento, consistência visual e direção de cena** a partir de prompts e referências.
+
+  Ele é menos sobre “surpresa criativa” e mais sobre **executar exatamente o que você dirige**.
+
+  **Recursos principais**
+
+  - Controle preciso de movimento de câmera, corpo e objetos
+  - Suporte a imagens de referência para manter personagens e cenários consistentes
+  - Ótima coerência temporal entre frames (menos “derretimento” visual)
+  - Ideal para cenas com ação, coreografia e tracking de câmera
+
+  **Opções de saída**
+
+  - Resoluções até **1080p**
+  - Duração variável por clipe (dependendo da integração)
+  - Estilos cinematográficos, realistas ou estilizados
+
+  **Indicado para**
+
+  - Reels, trailers, cenas de filme e comerciais em vídeo
+  - Conteúdo com movimento coreografado
+  - Quando você precisa que a IA “obedeça o diretor”, não apenas improvise
+</Accordion>
