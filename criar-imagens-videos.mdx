@@ -32,7 +32,7 @@ Selecione o modelo de IA generativa ideal para seu objetivo (ex: OpenAI Sora 2 P
 
 ### **4** Gere seu asset
 
-Clique no botão **Gerar**. Seus assets de \*\*imagem \*\*serão criados e exibidos na aba **_Histórico_**\_ \_para revisão, com os detalhes da imagem criada. Em **_Explorar_**, você poderá clicar para visualizar a imagem em tamanho maior. Já para **vídeos**, os assets criados são exibidos numa mesma visualização. Em ambos os workflows, ao clicar nos prompts em _Criar vídeo_ ou no _Histórico_ (para imagens), os textos são carregados automaticamente na seção de prompts.
+Clique no botão **Gerar**. Seus assets de imagem serão criados e exibidos na aba **_Histórico_** para revisão, com os detalhes da imagem criada. Em **_Explorar_**, você poderá clicar para visualizar a imagem em tamanho maior. Já para **vídeos**, os assets criados são exibidos numa mesma visualização. Em ambos os workflows, ao clicar nos prompts em _Criar vídeo_ ou no _Histórico_ (para imagens), os textos são carregados automaticamente na seção de prompts.
 
 ### **5** Aprimore e refine
 
@@ -107,7 +107,7 @@ Já para modelos de imagem, a quantidade de imagens de referência aceitas para 
 
 **Nano Banana:** 9 imagens (1 imagem base + 8 refs)
 
-**Refs de Imagem (Imagem):** Forneça uma ou mais imagens de estilo/estrutura para guiar o estilo e a aparência final da primeira imagem (base) ou para editar uma nova imagem. 
+**Refs de Imagem (Imagem):** Forneça uma ou mais imagens de estilo/estrutura para guiar o estilo e a aparência final da primeira imagem (base) ou para editar uma nova imagem.
 
 <Tip>
   Arraste e solte itens diretamente das abas _Explorar_ ou \_Histórico \_(Criar imagem) nos slots de referência para um fluxo de trabalho mais rápido. Em Criar vídeo, arrasta imagens nos slots de imagens.
@@ -139,7 +139,7 @@ A aba **\_Explorar \_**mostra tudo o que foi criado e permite clicar para expand
 
 ![Gerar Video](/images/gerar-video.jpg)
 
-Os vídeos gerados são mostrados automaticamente na própria seção. 
+Os vídeos gerados são mostrados automaticamente na própria seção.
 
 **Aumentar resolução do vídeo:** envia o vídeo para a seção Aprimorar, onde o arquivo pode ter a resolução aumentada (upscaling) com o **Topaz Upscale**.
 
@@ -369,6 +369,7 @@ Modelos de pós-processamento exigem um resultado já gerado, embora você tamb�
 
   **Recursos principais**
 
+  - Frame inicial e final
   - Controle preciso de movimento de câmera, corpo e objetos
   - Suporte a imagens de referência para manter personagens e cenários consistentes
   - Ótima coerência temporal entre frames (menos “derretimento” visual)
@@ -385,4 +386,148 @@ Modelos de pós-processamento exigem um resultado já gerado, embora você tamb�
   - Reels, trailers, cenas de filme e comerciais em vídeo
   - Conteúdo com movimento coreografado
   - Quando você precisa que a IA “obedeça o diretor”, não apenas improvise
+</Accordion>
+
+<Accordion title="Seedance 1.5 Pro">
+  Modelo de geração de vídeo por IA projetado para **produção consistente, previsível e escalável** de clipes a partir de texto e referências visuais.
+
+  É orientado a **workflows de produção**, não a experimentação artística aleatória.
+
+  **Recursos principais**
+
+  - Frame inicial e final
+  - Geração de vídeo com alta estabilidade temporal
+  - Suporte a imagens de referência para personagens, cenários e estilo
+  - Boa preservação de identidade visual entre frames
+  - Adequado para pipelines de conteúdo e automação
+
+  **Opções de saída**
+
+  - Resoluções até **1080p**
+  - Durações configuráveis por clipe
+  - Perfis de qualidade balanceados entre custo e fidelidade visual
+
+  **Indicado para**
+
+  - Criação de vídeos para marketing, social media e produto
+  - Produção de múltiplas variações de uma mesma cena
+  - Plataformas que exigem previsibilidade, não apenas criatividade
+</Accordion>
+
+<Accordion title="Kling O1">
+  Motor multimodal de vídeo por IA que combina **texto, imagens e vídeo como entrada** para gerar, editar e continuar cenas com **coerência visual e controle direcional** avançado. 
+
+  **Recursos principais**
+
+  - **Multimodalidade nativa**: aceita prompt de texto, imagens de referência (elementos/objetos/personagens) e vídeo de entrada para geração orientada por contexto.
+  - **Geração e edição de vídeo**: text-to-video, image-to-video e edição por linguagem natural — sem necessidade de mascaramento tradicional, tracking ou keyframing.
+  - **Consistência de cena e personagens**: mantém rostos, roupas, objetos e cenários estáveis em múltiplos cortes e ângulos quando referenciados.
+  - **Controle criativo unificado**: combina tarefas como adição de sujeito + mudança de fundo + restyling em uma única chamada de API.
+  - **Continuidade e sequência**: suporte a frames inicial/final e referência de vídeo para conectar tomadas com linguagem cinematográfica coerente.
+
+  **Opções de saída**
+
+  - Vídeo em formato MP4 com **controle de duração e proporção** conforme parâmetro da integração.
+  - Saídas coerentes de movimento e linguagem visual entre frames e cenas subsequentes.
+
+  **Indicado para**
+
+  - **Produção de vídeo profissional** com narrativa contínua ou cenas sequenciais.
+  - **Edição baseada em texto** — alterar elementos de cena, mudar iluminação ou restilar personagens diretamente por prompt.
+  - **Pipelines de conteúdo escaláveis** que exigem saída previsível, reutilização de ativos e consistência visual.
+</Accordion>
+
+<Accordion title="Kling 2.6 Motion Control">
+  Tecnologia de **transferência de movimento por IA** incorporada ao Kling Video 2.6, projetada para capturar e aplicar **movimento real extraído de vídeos de referência** a imagens estáticas, gerando vídeos com **controle preciso de ação, postura e expressões**.
+
+  **Recursos principais**
+
+  - **Transferência de movimento baseada em referência:** importa movimentos de um vídeo de 3 a 30 segundos e aplica diretamente a uma imagem de personagem.
+  - **Captura de corpo completo e detalhes finos:** preserva postura, gestos de mãos e expressões faciais com **alta fidelidade temporal** — inclusive em ações rápidas e coreografias.
+  - **Orientação de personagem flexível:** permite ajustar o enquadramento da ação usando modos que mantêm o personagem alinhado ao vídeo de referência ou à composição da imagem original.
+  - **Refinamento de cena via prompt:** além do movimento, prompts de texto podem ajustar **cenário, iluminação, atmosfera e estilo visual** sem afetar a transferência de movimento.
+  - **Controle opcional de áudio:** possibilidade de manter o áudio original da referência ou gerar saída silenciosa para pós-produção sonora.
+
+  **Opções de saída**
+
+  - Geração de vídeo de **3 a 30 segundos** em **720p ou 1080p**, com movimento contínuo e coerente.
+  - Suporte a múltiplos formatos de referência (imagem e vídeo)
+
+  **Indicado para**
+
+  - Animação de personagens com **movimento realista** diretamente a partir de vídeos de referência.
+  - Produção de conteúdo visual com ações específicas (dança, esporte, gestos) sem rigging ou pipelines tradicionais de mocap.
+  - Criação de vídeos para social media, marketing e storytelling que dependem de transferência de movimento previsível e estável.
+</Accordion>
+
+<Accordion title="LTX 2 Pro">
+  Versão avançada do LTX, orientada a **qualidade visual, consistência e controle de cena**.
+
+  Equilibra velocidade com fidelidade estética.
+
+  **Recursos principais**
+
+  - Melhor coerência temporal que o LTX Fast
+  - Maior estabilidade de personagens e objetos
+  - Interpretação mais precisa de prompts
+
+  **Opções de saída**
+
+  - Resoluções e durações superiores ao Fast
+  - Perfis de qualidade configuráveis
+
+  **Indicado para**
+
+  - Conteúdo comercial e institucional
+  - Vídeos de produto e marketing
+  - Produção recorrente com padrão visual definido
+</Accordion>
+
+<Accordion title="LTX 2 Fast">
+  Modelo de vídeo otimizado para **velocidade máxima e custo reduzido**, com foco em geração em massa.
+
+  Não é um modelo cinematográfico — é um **motor de testes e gerações para redes sociais**.
+
+  **Recursos principais**
+
+  - Renderização acelerada
+  - Baixo custo por clipe
+  - Boa estabilidade para cenas simples e loops
+
+  **Opções de saída**
+
+  - Durações curtas
+  - Qualidade voltada para preview e distribuição rápida
+
+  **Indicado para**
+
+  - Conteúdo em escala (feeds, ads, variações de criativos)
+  - Testes A/B visuais
+  - Automação de vídeos
+</Accordion>
+
+<Accordion title="OmniHuman 1.5">
+  Modelo avançado de sincronização labial realista voltado à criação de **humanos e personagens digitais dinâmicos e cinematográficos** a partir de imagem e áudio.
+
+  Projetado para workflows profissionais, ele vai além de avatares estáticos: **personagens podem se mover, reagir e interagir de forma realista**.
+
+  **Recursos principais**
+
+  - Geração de atores digitais com **movimento corporal completo**, gestos naturais e expressões faciais fluidas
+  - Controle de cena e de personagem por texto e áudio, incluindo **orientações de câmera e timing**
+  - Suporte a **cenários com múltiplos personagens interagindo** de forma coerente
+  - Interpretação semântica de áudio que alinha ação e expressão ao conteúdo falado
+
+  **Opções de saída**
+
+  - Vídeos com qualidade **cinematográfica**, com composição de cena, movimentos planejados e depth
+  - Controle de **ângulos de câmera, zoom e enquadramento** via prompt
+  - Saídas ajustáveis conforme necessidade de produção
+
+  **Indicado para**
+
+  - Produção de conteúdo audiovisual profissional: marketing, institucional, treinamentos
+  - Criação de **personagens digitais realistas** para vídeos narrativos
+  - Integração em pipelines de vídeo com atores virtuais em escala
+  - Aplicações educacionais, corporativas e comerciais que exigem performance digital realista
 </Accordion>
